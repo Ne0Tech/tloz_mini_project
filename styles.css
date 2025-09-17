@@ -1,32 +1,25 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    color: #222;
+    background: #f5f2ea;
     margin: 0;
     padding: 0;
+    color: #2e2e2e;
 }
 
 header {
-    background: #1a472a;
-    color: #fff;
-    padding: 20px;
+    background: #4a3826;
+    color: white;
+    padding: 15px;
     text-align: center;
 }
 
-nav {
-    background: #2d5d3b;
-    padding: 10px;
-    text-align: center;
-}
-
-nav a {
-    color: #fff;
-    margin: 0 15px;
+header nav a {
+    color: #ffd46f;
+    margin: 0 8px;
     text-decoration: none;
-    font-weight: bold;
 }
 
-nav a:hover {
+header nav a:hover {
     text-decoration: underline;
 }
 
@@ -36,14 +29,83 @@ main {
     margin: auto;
 }
 
-h1, h2 {
-    color: #1a472a;
+.timeline-box {
+    background: #fff9ed;
+    border: 2px solid #d1b36f;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+    position: relative;
 }
 
-footer {
-    background: #1a472a;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+.timeline-box img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.timeline-section.vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    margin: 40px 0;
+}
+
+.timeline-box::after {
+    content: "";
+}
+
+.timeline-section.vertical .timeline-box::after {
+    content: "↓";
+    font-size: 2rem;
+    color: #5c3b1e;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-section.vertical .timeline-box:last-child::after {
+    content: "";
+}
+
+.timeline-section.horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin: 40px 0;
+}
+
+.timeline-section.horizontal .timeline-box::after {
+    content: "→";
+    font-size: 2rem;
+    color: #5c3b1e;
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    transform: translateY(-50%);
+}
+
+.timeline-section.horizontal .timeline-box:last-child::after {
+    content: "";
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #d1b36f;
+    color: #2e2e2e;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #c0a259;
 }
