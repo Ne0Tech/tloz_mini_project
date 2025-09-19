@@ -3,7 +3,7 @@ body {
     background: #f5f2ea;
     margin: 0;
     padding: 0;
-    color: #2e2e2e;
+    color: #000000;
 }
 
 header {
@@ -30,7 +30,7 @@ main {
 }
 
 .timeline-box {
-    background: #fff9ed;
+    background: #493826;
     border: 2px solid #d1b36f;
     border-radius: 8px;
     padding: 15px;
