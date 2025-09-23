@@ -1,10 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #f5f2ea;
-    margin: 0;
-    padding: 0;
-    color: #000000;
+    font-family: 'HyliaSerifBeta-Regular.otf', sans-serif; /* Include fallback fonts */
 }
+
+h1 {
+    font-family: 'HyliaSerifBeta-Regular.otf', serif;
+}
+
 
 header {
     background: #4a3826;
