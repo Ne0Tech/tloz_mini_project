@@ -1,5 +1,7 @@
 body {
     font-family: 'HyliaSerifBeta-Regular.otf', sans-serif; /* Include fallback fonts */
+    margin: 0;
+
 }
 
 h1 {
@@ -69,6 +71,7 @@ main {
     left: 50%;
     transform: translateX(-50%);
 }
+
 
 .timeline-section.vertical .timeline-box:last-child::after {
     content: "";
